@@ -1,0 +1,66 @@
+name: Feature Request
+description: Suggérer une nouvelle fonctionnalité
+title: "[FEATURE] "
+labels: ["enhancement", "feature-request"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci de suggérer une nouvelle fonctionnalité !
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problème à résoudre
+      description: Décrivez le problème que cette fonctionnalité résoudrait
+      placeholder: "Cette fonctionnalité résoudrait le problème de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution proposée
+      description: Décrivez la solution que vous aimeriez voir
+      placeholder: "J'aimerais voir..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Solutions alternatives
+      description: Décrivez les alternatives que vous avez considérées
+      placeholder: "J'ai aussi pensé à..."
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorité
+      description: Quelle est la priorité de cette fonctionnalité ?
+      options:
+        - Low (Basse)
+        - Medium (Moyenne)
+        - High (Haute)
+        - Critical (Critique)
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Contexte supplémentaire
+      description: Ajoutez toute autre information utile
+      placeholder: "Contexte supplémentaire..."
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Vérifications
+      options:
+        - label: J'ai vérifié qu'il n'y a pas déjà une feature request similaire
+          required: true
+        - label: Cette fonctionnalité s'aligne avec les objectifs du projet
+          required: true
